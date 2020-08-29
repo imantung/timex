@@ -1,6 +1,9 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/imantung/timex)](https://goreportcard.com/report/github.com/imantung/timex)
+[![Coverage](https://gocover.io/_badge/github.com/imantung/timex)](https://gocover.io/github.com/imantung/timex)
+
 # timex
 
-Time extended package
+Really simple time wrapper package
 
 ## Freeze Time 
 
