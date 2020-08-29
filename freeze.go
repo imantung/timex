@@ -15,15 +15,15 @@ func Freeze(fn DateFn) {
 	Now = fn
 }
 
-// FreezeTime freeze with specific time
-func FreezeTime(t time.Time) {
+// FreezeByTime freeze by specific time
+func FreezeByTime(t time.Time) {
 	Freeze(func() time.Time {
 		return t
 	})
 }
 
-// FreezeRFC3339 freeze with specific RFC3339 time string
-func FreezeRFC3339(s string) {
+// FreezeByRFC3339 freeze by specific RFC3339 formatted string
+func FreezeByRFC3339(s string) {
 	Freeze(func() time.Time {
 		t, _ := time.Parse(time.RFC3339, s)
 		return t
